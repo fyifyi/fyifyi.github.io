@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="white">
+<head>
+<title>fyi</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10;chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta property="og:title" content="fyi">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fyi.run">
+<meta property="og:image" content="https://fyi.run/img/fyi-logo.png">
+<meta property="og:site_name" content="fyi">
+<meta property="og:description" content="Kill the status meeting">
+
+<style type="text/css">
+html, body {width:100%; height:100%;margin:0; padding:0;font-size:20px; font-weight: normal; }
+body, form, input, button,label {font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#00526d; margin:0 auto; text-align:center;padding:0; font-weight:normal;  -webkit-font-smoothing: antialiased;}
+form, input {font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',sans-serif; font-size:20px; text-align: left}
+h1,h2,h3,ul,li,p,article,section,form,fieldset {display:block;margin:0; padding:0; list-style-type: none; border:none; font-weight:normal;}
+img {border:none;}
+a {color:#38b778; text-decoration: none }
+::selection {color: #fff; background:#00bfff;}
+hr {background:none; height:0px; border:none; border-bottom:2px solid #00526d; margin:0 auto; }
+header, article, footer {display:block; margin:0 auto;clear:both;}/* header, footer */
+
+
+.white {background-color:#fff;}
+.sky {background-color: #f3fafe}
+.punch {background-color: #1e90ff}
+.blue {color:#00bfff;}
+
+.form label {display:block;text-align: left; padding-left:10px; padding-bottom: 10px}
+.form .form-email { border:2px solid #00526d; background:#f3fafe;  font-weight:bold;  width:70%; height: 50px; padding:0 4px 0 10px; border-radius: 24px}
+.form .form-button { margin-left:4px; border:2px solid #00526d; background:#00526d;  height: 52px; padding:0 20px; color:#fff; border-radius: 24px}
+.form .form-email:focus {background:#fff;}
+input::placeholder {font-weight:normal;}
+
+/*
+header .logo {display:inline-block; width:60px; height:60px;  border-radius: 14px; background: #1e90ff; margin:10px auto;  opacity: 1}
+header .logo h1  {line-height:60px; margin:0; padding:0; font-size: 100%; font-weight:bold; color:#fff;  }
+*/
+header .logo {display:inline-block; width:60px; height:60px; background: url("./img/fyi-logo-240.png") center center no-repeat; background-size: 44px 44px}
+header .logo h1 b {opacity: 0}
+footer {margin:80px auto 0; padding:0 0 40px 0;}
+footer nav {color:#ccc; font-size:80%; margin:30px auto;}
+footer nav a {color:#6a6b6c; text-transform: uppercase;}
+
+/* layout */
+.layout-left, .layout-right {float:left; text-align: left}
+.layout-right {float:right;}
+.layout-half {margin:0 auto; text-align: left}
+
+article h1 {font-size:180%;}
+article h2 {color:#888; margin:40px auto; text-align: center}
+article h3 {font-weight: normal; text-transform: uppercase;}
+article p {font-weight: normal; font-size:100%; }
+article .p-h1 {margin:20px 0; line-height: 30px;}
+article .p-dl {margin:40px 0;}
+article .h1 { margin:80px 0 0 0}
+
+/* phone */
+
+.phone {width:348px; height: 712px; background:#fff;  border:2px solid #00526d; border-radius:56px}
+.phone-inner {width:300px; height:70%; margin:88px auto 0; border:2px solid #00526d;border-radius: 2px}
+.phone-carrier {width:100%;height:100%;background:#f3fafe; border-bottom:1px solid #00526d; }
+.phone-nav {width:100%;}
+.phone-carrier {line-height: 20px}
+.phone-carrier-wifi {float:left; padding-left:10px; padding-top:3px;}
+.phone-carrier-wifi li {display:inline-block; width:6px; height:6px; border:1px solid #00526d; border-radius:6px; background:#00526d; opacity: 0.4}
+.phone-carrier-battery {float:right; padding-right:10px;}
+.phone-carrier-battery li {display: inline-block; width:8px; height:8px; background:#00526d; opacity: 0.6}
+.phone-carrier-wifi li.open {background: none}
+.phone-carrier-battery li.open {opacity: 0.2; width:12px;}
+
+
+
+/* about phones */
+.phone-body {height: 100%; overflow: hidden}
+
+/* blockquotes */
+.bq {display:block; vertical-align: top; border-bottom:1px solid #fff;}
+.bq p {display:inline-block; text-align: left; font-size: 112%;vertical-align: top;}
+.bq p b {display:block;}
+.bq p span {font-size:80%; color:#656565;}
+.bq cite {display: inline-block; text-align: left; margin-right:10px;}
+.bq cite img {display:block; text-align:center; width:50px; height:50px;}.bg cite span {display:none}.bq a {color:#454545;}
+
+/* socialize */
+.socialize {margin: 0 auto; text-align: left;}
+.socialize a {color:#454545; display:inline-block; font-weight:normal; padding:10px; text-align: left}
+.socialize .fa {width:20px;}
+
+/* widths, heights */
+header, article, footer {width:980px;}
+.section {width:800px; margin:0 auto;}
+article { margin-top:48px;overflow: hidden;}
+.article-short {height: 470px; }
+.layout-slim {width:420px;}
+.layout-wide, .layout-half {width:550px;}
+.socialize {width:160px;}
+
+/* hover */
+nav a:hover {color: #ccc;}
+
+
+@media only screen and (max-width : 768px) {
+  header, article, footer, .section {width:100%;}
+  .layout-slim {display:none;float:none;}
+  .layout-wide, .layout-half {width:94%; margin: 0 auto; float:none; display:block;}
+  header { height:60px; line-height:60px; }
+  header h1, header nav {display:block;float:none; text-align: center}
+  header h1 {background-position: 50% 50%}
+  header h1 a {text-indent: -99999em;}
+  header, header nav, footer {background:#efefef;}
+  header nav a, footer nav a {padding:0}
+  footer nav {padding:10px 0 0 0;}
+  footer nav {width:90%;}
+  footer nav a {display:block; text-align:left; padding:10px 0;}
+  header nav a {display:inline-block; width:25%; text-align:center;}
+}
+
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo"><h1><b>fyi</b></h1></div>
+</header>
+  <article class="article-short">
+    
+    <div class="layout-left layout-slim">
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="phone-carrier">
+            <div class="phone-carrier-stuff">
+              <div class="phone-carrier-battery"><li></li><li class="open"></li></div>
+              <div class="phone-carrier-wifi"><li></li><li></li><li></li><li class="open"></li></div>
+            </div>
+          </div>
+          <div class="phone-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-right layout-wide">
+      <h1 class="h1">Kill the status meeting</h1>
+      <p class="p-h1">Not all meetings are needed. Stay aligned without the calendar event.</p>
+      <p class="p-dl" >
+        <form class="form" action="//run.us15.list-manage.com/subscribe/post?u=a542fb50d36be40af3ae8b1bc&amp;id=3ea7c5824f" method="post" id="mc-embedded-subscribe-form" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <fieldset>
+            <label>Request Beta Access</label>
+            <input type="text" name="EMAIL" placeholder="Email" class="form-email" /><input type="submit" value="go" class="form-button"/>
+         </fieldset>
+       </form>
+      </p>
+    </div>
+
+  </article>
+  <hr/>
+  <footer>
+    <nav>&copy; fyi</nav>
+  </footer>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99176542-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

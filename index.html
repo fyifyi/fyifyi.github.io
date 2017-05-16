@@ -35,10 +35,7 @@ header, article, footer {display:block; margin:0 auto;clear:both;}/* header, foo
 .form .form-email:focus {background:#fff;}
 input::placeholder {font-weight:normal;}
 
-/*
-header .logo {display:inline-block; width:60px; height:60px;  border-radius: 14px; background: #1e90ff; margin:10px auto;  opacity: 1}
-header .logo h1  {line-height:60px; margin:0; padding:0; font-size: 100%; font-weight:bold; color:#fff;  }
-*/
+
 header .logo {display:inline-block; width:60px; height:60px; background: url("./img/fyi-logo-240.png") center center no-repeat; background-size: 44px 44px}
 header .logo h1 b {opacity: 0}
 footer {margin:80px auto 0; padding:0 0 40px 0;}
@@ -105,18 +102,16 @@ nav a:hover {color: #ccc;}
 
 @media only screen and (max-width : 768px) {
   header, article, footer, .section {width:100%;}
-  .layout-slim {display:none;float:none;}
-  .layout-wide, .layout-half {width:94%; margin: 0 auto; float:none; display:block;}
-  header { height:60px; line-height:60px; }
-  header h1, header nav {display:block;float:none; text-align: center}
-  header h1 {background-position: 50% 50%}
-  header h1 a {text-indent: -99999em;}
-  header, header nav, footer {background:#efefef;}
-  header nav a, footer nav a {padding:0}
-  footer nav {padding:10px 0 0 0;}
-  footer nav {width:90%;}
-  footer nav a {display:block; text-align:left; padding:10px 0;}
-  header nav a {display:inline-block; width:25%; text-align:center;}
+  article { margin-top:20px}
+  article .h1 { margin:40px 0 0 0; font-size:140%;}
+  article .p-h1 {font-size:90%; opacity: 0.8; line-height: 24px}
+  .phone {width:54px; height:100px; border-radius:10px; margin:0 auto;}
+  .phone-inner {width:78%; height:80%;margin:10px auto 0}
+  .phone-carrier-wifi, .phone-carrier-battery {display: none}
+  .article-short {height: auto }
+  .layout-slim {height:100px; }
+  .layout-left, .layout-wide, .layout-half, .layout-short {width:94%; margin: 0 auto; float:none; display:block;}
+  hr {padding-top:40px;}
 }
 
 
